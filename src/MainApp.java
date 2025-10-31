@@ -15,6 +15,6 @@ public class MainApp {
         k.tambah("Kopi", 10000, "Minuman");
         k.tambah("Sate Ayam", 20000, "Makanan");
         k.tampilkanSemua();
-        //k.tampilkanBerdasarkanKategori("Makanan");
+        k.tampilkanBerdasarkanKategori("Makanan");
     }
 }
