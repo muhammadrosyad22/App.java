@@ -59,7 +59,14 @@ class PengelolaKeuangan implements OperasiPengeluaran {
         }
         return t;
     }
-
+public void tampilkanBerdasarkanKategori(String kategori) {
+        System.out.println("\nPengeluaran kategori: " + kategori);
+        for (Pengeluaran p : daftar) {
+            if (p.kategori.equalsIgnoreCase(kategori)) {
+                p.tampilkanInfo();
+            }
+        }
+    }
     /**
      * Menampilkan semua pengeluaran dan totalnya.
      */
